@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal de Estudos — Thiago Soares Pinheiro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">TS</div>
+      <div>
+        <h1>Portal de Estudos</h1>
+        <p>Conteúdos públicos reunidos de github.com/thiagospin</p>
+      </div>
+    </div>
+    <button id="themeBtn" class="theme-btn" aria-label="Alternar tema">☾</button>
+  </header>
+
+  <section class="hero">
+    <div class="hero-copy">
+      <span class="eyebrow">FAETEC • DESENVOLVIMENTO • INFORMÁTICA</span>
+      <h2>Um único lugar para revisar os conteúdos.</h2>
+      <p>HTML, CSS, JavaScript, DOM, Flexbox, Bootstrap, PHP, Python, Angular, Excel e Power BI organizados em uma interface única.</p>
+      <div class="hero-actions">
+        <a href="#conteudos" class="btn primary">Explorar conteúdos</a>
+        <a href="#repositorios" class="btn secondary">Ver repositórios</a>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat"><strong>9</strong><span>repositórios</span></div>
+      <div class="stat"><strong>10+</strong><span>áreas de estudo</span></div>
+      <div class="stat"><strong>1</strong><span>portal central</span></div>
+    </div>
+  </section>
+
+  <main>
+    <section class="search-panel">
+      <input id="search" type="search" placeholder="Pesquisar: calculadora, flexbox, PHP, Python, Excel...">
+      <div class="filters" id="filters"></div>
+    </section>
+
+    <section id="conteudos">
+      <div class="section-head">
+        <span>CONTEÚDOS</span>
+        <h2>Mapa de estudos</h2>
+      </div>
+
+      <div class="cards" id="contentCards">
+        <article class="card" data-tags="html css javascript dom aplicweb calculadora login validacao margin padding">
+          <span class="tag">APLICWEB I</span>
+          <h3>HTML, CSS, DOM e exercícios web</h3>
+          <p>Estruturação com HTML, estilização com CSS, margin e padding, tela de login, validação de campos, manipulação do DOM e calculadora usando tabela.</p>
+          <ul>
+            <li>Margin e padding</li>
+            <li>Tela de login</li>
+            <li>Validação de campos</li>
+            <li>DOM e DOM + CSS</li>
+            <li>Calculadora HTML com table</li>
+          </ul>
+          <a href="https://github.com/thiagospin/APLICWEBI" target="_blank">Abrir APLICWEBI ↗</a>
+        </article>
+
+        <article class="card" data-tags="javascript crud api restful exercicios componentes js">
+          <span class="tag">JAVASCRIPT</span>
+          <h3>JavaScript puro e CRUD</h3>
+          <p>Exercícios e projetos com JavaScript puro, incluindo práticas de CRUD, componentes e API RESTful.</p>
+          <ul>
+            <li>Exercícios de JavaScript</li>
+            <li>CRUD com componente/menu</li>
+            <li>CRUD com API RESTful</li>
+            <li>Material de aula em apresentação</li>
+          </ul>
+          <a href="https://github.com/thiagospin/JAVASCRIPT" target="_blank">Abrir JAVASCRIPT ↗</a>
+        </article>
+
+        <article class="card" data-tags="css flexbox layout responsivo alinhamento">
+          <span class="tag">CSS</span>
+          <h3>Flexbox</h3>
+          <p>Introdução ao Flexbox para criação de layouts flexíveis, alinhamento e distribuição de elementos.</p>
+          <ul>
+            <li>Containers flexíveis</li>
+            <li>Alinhamento</li>
+            <li>Distribuição de espaço</li>
+            <li>Layouts responsivos</li>
+          </ul>
+          <a href="https://github.com/thiagospin/Flexbox" target="_blank">Abrir Flexbox ↗</a>
+        </article>
+
+        <article class="card" data-tags="python programacao notebook curso introducao">
+          <span class="tag">PYTHON</span>
+          <h3>Introdução à Programação em Python</h3>
+          <p>Curso introdutório de 30 horas, com notebooks, recursos, apresentação e programa do curso.</p>
+          <ul>
+            <li>Notebooks de estudo</li>
+            <li>Recursos complementares</li>
+            <li>Introdução à programação</li>
+            <li>Material estruturado de curso</li>
+          </ul>
+          <a href="https://github.com/thiagospin/IntroducaoPythonECG" target="_blank">Abrir Python ↗</a>
+        </article>
+
+        <article class="card" data-tags="excel power bi dax procv graficos validacao dados estoque">
+          <span class="tag">INFO BÁSICA</span>
+          <h3>Excel e Power BI</h3>
+          <p>Planilhas, exercícios e arquivos de Power BI cobrindo fórmulas, DAX, gráficos, PROCV, validação de dados e controle de estoque.</p>
+          <ul>
+            <li>PROCV</li>
+            <li>Validação de dados</li>
+            <li>Gráficos e dispersão</li>
+            <li>Controle de estoque</li>
+            <li>Power BI e DAX</li>
+          </ul>
+          <a href="https://github.com/thiagospin/infobasica" target="_blank">Abrir infobasica ↗</a>
+        </article>
+
+        <article class="card" data-tags="php backend servidor exemplos">
+          <span class="tag">PHP</span>
+          <h3>Exemplos em PHP</h3>
+          <p>Repositório dedicado a exemplos e práticas em PHP para desenvolvimento web no lado do servidor.</p>
+          <ul>
+            <li>Estrutura básica PHP</li>
+            <li>Exemplos didáticos</li>
+            <li>Práticas de backend</li>
+          </ul>
+          <a href="https://github.com/thiagospin/exemplosPHP" target="_blank">Abrir PHP ↗</a>
+        </article>
+
+        <article class="card" data-tags="bootstrap design componentes container formularios grid gutters navbar footer offcanvas tabelas imagens">
+          <span class="tag">DESIGN 3</span>
+          <h3>Bootstrap e componentes de interface</h3>
+          <p>Conteúdos organizados por componentes: containers, formulários, grid, gutters, imagens, navbar, footer, offcanvas e tabelas.</p>
+          <ul>
+            <li>Grid e containers</li>
+            <li>Formulários</li>
+            <li>Navbar e footer</li>
+            <li>Offcanvas</li>
+            <li>Tabelas e imagens</li>
+          </ul>
+          <a href="https://github.com/thiagospin/DESIGN3" target="_blank">Abrir DESIGN3 ↗</a>
+        </article>
+
+        <article class="card" data-tags="angular typescript projeto faetec component service cli">
+          <span class="tag">ANGULAR</span>
+          <h3>Projeto FAETEC / Angular</h3>
+          <p>Projeto Angular criado com Angular CLI, contendo estrutura de aplicação TypeScript, servidor, configurações e diretório src.</p>
+          <ul>
+            <li>Angular CLI</li>
+            <li>TypeScript</li>
+            <li>Componentes</li>
+            <li>Build e servidor de desenvolvimento</li>
+          </ul>
+          <a href="https://github.com/thiagospin/ProjetoFAETEC" target="_blank">Abrir ProjetoFAETEC ↗</a>
+        </article>
+
+        <article class="card" data-tags="frontend responsivo html css javascript mobile">
+          <span class="tag">RESPONSIVIDADE</span>
+          <h3>Frontend responsivo</h3>
+          <p>Exemplo de frontend responsivo usando HTML, CSS e JavaScript, com foco em adaptação a diferentes tamanhos de tela.</p>
+          <ul>
+            <li>HTML</li>
+            <li>CSS responsivo</li>
+            <li>JavaScript</li>
+            <li>Adaptação mobile</li>
+          </ul>
+          <a href="https://github.com/thiagospin/FrontResponsivo" target="_blank">Abrir FrontResponsivo ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="learning-path">
+      <div class="section-head">
+        <span>TRILHA</span>
+        <h2>Ordem sugerida de estudo</h2>
+      </div>
+      <div class="timeline">
+        <div><b>01</b><h3>HTML + CSS</h3><p>Estrutura, tags, tabelas, inputs, botões, margin e padding.</p></div>
+        <div><b>02</b><h3>Flexbox + Bootstrap</h3><p>Layout, responsividade, grid, componentes e formulários.</p></div>
+        <div><b>03</b><h3>JavaScript + DOM</h3><p>Eventos, funções, interação, validação, calculadora e CRUD.</p></div>
+        <div><b>04</b><h3>PHP + APIs</h3><p>Backend e comunicação entre aplicação e servidor.</p></div>
+        <div><b>05</b><h3>Angular + TypeScript</h3><p>Aplicações estruturadas com componentes e ferramentas modernas.</p></div>
+        <div><b>06</b><h3>Python + Dados</h3><p>Fundamentos de programação, Excel, Power BI e DAX.</p></div>
+      </div>
+    </section>
+
+    <section id="repositorios">
+      <div class="section-head">
+        <span>ORIGEM</span>
+        <h2>Todos os repositórios</h2>
+      </div>
+      <div class="repo-table-wrap">
+        <table class="repo-table">
+          <thead><tr><th>Repositório</th><th>Conteúdo principal</th><th>Tecnologia</th><th>Acesso</th></tr></thead>
+          <tbody>
+            <tr><td>APLICWEBI</td><td>Exercícios de Aplicações Web I</td><td>HTML / CSS / JS</td><td><a href="https://github.com/thiagospin/APLICWEBI" target="_blank">GitHub ↗</a></td></tr>
+            <tr><td>JAVASCRIPT</td><td>Exercícios, CRUD e API RESTful</td><td>JavaScript</td><td><a href="https://github.com/thiagospin/JAVASCRIPT" target="_blank">GitHub ↗</a></td></tr>
+            <tr><td>Flexbox</td><td>Introdução a layouts Flexbox</td><td>CSS</td><td><a href="https://github.com/thiagospin/Flexbox" target="_blank">GitHub ↗</a></td></tr>
+            <tr><td>IntroducaoPythonECG</td><td>Curso introdutório de 30h</td><td>Python / Notebook</td><td><a href="https://github.com/thiagospin/IntroducaoPythonECG" target="_blank">GitHub ↗</a></td></tr>
+            <tr><td>infobasica</td><td>Excel, Power BI, DAX e gráficos</td><td>Excel / Power BI</td><td><a href="https://github.com/thiagospin/infobasica" target="_blank">GitHub ↗</a></td></tr>
+            <tr><td>exemplosPHP</td><td>Exemplos de desenvolvimento PHP</td><td>PHP</td><td><a href="https://github.com/thiagospin/exemplosPHP" target="_blank">GitHub ↗</a></td></tr>
+            <tr><td>DESIGN3</td><td>Componentes, grid, navbar, formulários</td><td>HTML / Bootstrap</td><td><a href="https://github.com/thiagospin/DESIGN3" target="_blank">GitHub ↗</a></td></tr>
+            <tr><td>ProjetoFAETEC</td><td>Projeto Angular</td><td>Angular / TypeScript</td><td><a href="https://github.com/thiagospin/ProjetoFAETEC" target="_blank">GitHub ↗</a></td></tr>
+            <tr><td>FrontResponsivo</td><td>Frontend adaptável</td><td>HTML / CSS / JS</td><td><a href="https://github.com/thiagospin/FrontResponsivo" target="_blank">GitHub ↗</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Portal criado a partir dos repositórios públicos de <a href="https://github.com/thiagospin" target="_blank">@thiagospin</a>.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
